@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>DillBag | Home</title>
+	<link rel="stylesheet" href="../css/foundation.css">
+</head>
+<body class="backgroundhome">
+<div class="fixed">
+	<nav class="top-bar" data-topbar role="navigation" data-options="sticky_on [small,medium,large] is_hover:false">
+		<ul class="title-area right">
+			<li class="name">
+				<h1 id="navTitle"><a href="#"><i class="fa fa-home"></i></a></h1>
+			</li>
+			<li class="toggle-topbar"><a href="#"><span>Menu</span></a></li>
+		</ul>
+
+		<section class="top-bar-section">
+			<!--Left Nav Section -->
+			<ul class="Left">
+
+				<li class="has-dropdown">
+					<a href="#"><i class="fa fa-bars"></i></a>
+					<ul class="dropdown">
+						<li id="welcome" class="divider"><a href="#">The Dill Menu</a></li>
+						<li class="divider"></li>
+
+						<li class="has-dropdown">
+							<a href="#" target="_blank" id="cookie">Here's a cookie</a>
+							<ul class="dropdown">
+								<li id="Troll" class=" divider"><a href="#"></a></li>
+							</ul>
+						</li>
+						<div class="divider"></div>
+
+					</ul>
+				</li>
+			</ul>
+		</section>
+	</nav>
+</div>
+<form id="form">
+<div class="small-6 column inputmargin">
+	<p>Input an username | 16 characters or less.</p>
+	<input maxlength="16" type="text" lable="Username" id="username" required="">
+	<p>Input a password | 16 characters or less.</p>
+	<input maxlength="16" type="password" lable="Password" id="password" required="">
+	<p>Re-type your password | 16 characters or less.</p>
+	<input maxlength="16" type="password" lable="Re-type Password" id="retypepass" required="">
+	<p>Input an email(recommended)</p>
+	<input type="email" lable="email" id="email">
+	<div class="small-2 column">
+		<a href="" id="submit" class="alert button radius" onclick="submitButton()">Submit</a>
+	</div>
+</div>
+</form>
+<div class="small-2 column inputmargin">
+	<a href="text.html" class="alert button radius">Find Out More</a>
+</div>
+<!-- Scripts -->
+<script src="../js/foundation/foundation.topbar.js"></script>
+<script src="../js/inputcheck.js"></script>
+<script src="../js/home.js"></script>
+<script src="../js/vendor/jquery.js"></script>
+</body>
+</html>
